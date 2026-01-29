@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* HEADER */
+.header {
+    background: #111;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+.site-title {
+    font-size: 36px;
+}
+.tagline {
+    font-size: 14px;
+    opacity: 0.8;
+}
+/* NAVBAR */
+.navbar {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color: #00ff99;
+}
+/* MAIN CONTENT */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+.post {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+.post h2 {
+    margin-bottom: 10px;
+}
+date {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
+}
+.read-more {
+    color: #0066cc;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.read-more:hover {
+    text-decoration: underline;
+}
+/* FOOTER */
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* MOBILE RESPONSIVENESS */
+@media (max-width:600px) {
+    .site-title {
+        font-size: 28px;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
