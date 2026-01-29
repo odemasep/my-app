@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ApexInvest | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body onload="protectDashboard()">
+
+<header class="navbar">
+    <div class="logo">Apex<span>Invest</span></div>
+    <button class="btn-outline" onclick="logout()">Logout</button>
+</header>
+
+<section class="dashboard">
+    <h1>Your Portfolio</h1>
+
+    <div class="dashboard-cards">
+        <div class="card">
+            <h3>Total Balance</h3>
+            <h2>$20,500</h2>
+        </div>
+        <div class="card">
+            <h3>Annual Return</h3>
+            <h2>+12.4%</h2>
+        </div>
+        <div class="card">
+            <h3>Risk Level</h3>
+            <h2>Moderate</h2>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="dashboardChart"></canvas>
+    </div>
+</section>
+
+</body>
+</html>

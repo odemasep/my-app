@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ApexInvest | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="auth-body">
+
+<div class="auth-container">
+    <h2>Welcome Back</h2>
+
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+
+    <button class="btn-primary" onclick="login()">Login</button>
+
+    <p class="switch">
+        Don’t have an account?
+        <span onclick="toggleAuth()">Sign up</span>
+    </p>
+</div>
+
+<div class="auth-container hidden" id="signupBox">
+    <h2>Create Account</h2>
+
+    <input type="email" id="signupEmail" placeholder="Email">
+    <input type="password" id="signupPassword" placeholder="Password">
+
+    <button class="btn-primary" onclick="signup()">Sign Up</button>
+
+    <p class="switch">
+        Already have an account?
+        <span onclick="toggleAuth()">Login</span>
+    </p>
+</div>
+
+</body>
+</html>
