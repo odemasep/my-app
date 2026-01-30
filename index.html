@@ -1,127 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ApexInvest</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-    }
-    .container {
-      max-width: 400px;
-      margin: 80px auto;
-      background: #020617;
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    }
-    h1, h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    input {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 12px;
-      border-radius: 8px;
-      border: none;
-      outline: none;
-    }
-    button {
-      width: 100%;
-      padding: 12px;
-      border-radius: 8px;
-      border: none;
-      background: #38bdf8;
-      color: #020617;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #0ea5e9;
-    }
-    .dashboard {
-      display: none;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 24px;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-    }
-    .card {
-      background: #020617;
-      padding: 20px;
-      border-radius: 12px;
-    }
-    .logout {
-      margin-top: 20px;
-      background: #ef4444;
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexInvest | Smart Investment Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-  <!-- LOGIN -->
-  <div id="login" class="container">
-    <h1>ApexInvest</h1>
-    <h2>Login</h2>
-    <input type="text" id="username" placeholder="Username" />
-    <input type="password" id="password" placeholder="Password" />
-    <button onclick="login()">Sign In</button>
-  </div>
+<header class="navbar">
+    <div class="logo">Apex<span>Invest</span></div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button class="btn-primary">Get Started</button>
+    </nav>
+</header>
 
-  <!-- DASHBOARD -->
-  <div id="dashboard" class="dashboard">
-    <h1>Welcome to ApexInvest</h1>
-    <div class="cards">
-      <div class="card">
-        <h3>Account Balance</h3>
-        <p>$25,430.00</p>
-      </div>
-      <div class="card">
-        <h3>Total Investments</h3>
-        <p>$18,200.00</p>
-      </div>
-      <div class="card">
-        <h3>ROI</h3>
-        <p>+12.4%</p>
-      </div>
-      <div class="card">
-        <h3>Market Status</h3>
-        <p>Open</p>
-      </div>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Grow Your Wealth with Confidence</h1>
+        <p>Professional investment strategies tailored for long-term success.</p>
+        <button class="btn-primary">Start Investing</button>
+        <button class="btn-outline">Learn More</button>
     </div>
-    <button class="logout" onclick="logout()">Logout</button>
-  </div>
+</section>
 
-  <script>
-    function login() {
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
+<section class="stats">
+    <div class="stat">
+        <h2>$5B+</h2>
+        <p>Assets Managed</p>
+    </div>
+    <div class="stat">
+        <h2>12%</h2>
+        <p>Avg Annual Return</p>
+    </div>
+    <div class="stat">
+        <h2>50K+</h2>
+        <p>Global Clients</p>
+    </div>
+</section>
 
-      // simple demo check
-      if (username && password) {
-        document.getElementById('login').style.display = 'none';
-        document.getElementById('dashboard').style.display = 'block';
-      } else {
-        alert('Please enter username and password');
-      }
-    }
+<section class="services" id="services">
+    <h2>Our Investment Services</h2>
+    <div class="service-grid">
+        <div class="card">
+            <h3>Portfolio Management</h3>
+            <p>Diversified portfolios designed to reduce risk and maximize returns.</p>
+        </div>
+        <div class="card">
+            <h3>Wealth Planning</h3>
+            <p>Strategic planning to secure your financial future.</p>
+        </div>
+        <div class="card">
+            <h3>Market Analysis</h3>
+            <p>Data-driven insights backed by experienced analysts.</p>
+        </div>
+    </div>
+</section>
 
-    function logout() {
-      document.getElementById('dashboard').style.display = 'none';
-      document.getElementById('login').style.display = 'block';
-    }
-  </script>
+<section class="about" id="about">
+    <h2>Why Choose ApexInvest?</h2>
+    <p>
+        We combine cutting-edge financial technology with expert human insight.
+        Our mission is to help clients grow wealth responsibly and transparently.
+    </p>
+</section>
+
+<section class="cta">
+    <h2>Ready to Build Your Financial Future?</h2>
+    <button class="btn-primary">Schedule a Consultation</button>
+</section>
+
+<footer id="contact">
+    <p>© 2026 ApexInvest. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
+
 
