@@ -94,3 +94,21 @@ if (dashCtx) {
         }
     });
 }
+// INDEX → DASHBOARD CONNECTION
+document.addEventListener('DOMContentLoaded', () => {
+    const authButton = document.getElementById('authButton');
+    const heroButton = document.getElementById('heroButton');
+
+    if (localStorage.getItem('loggedIn') === 'true') {
+        if (authButton) {
+            authButton.textContent = 'Dashboard';
+            authButton.href = 'dashboard.html';
+        }
+
+        if (heroButton) {
+            heroButton.textContent = 'Go to Dashboard';
+            heroButton.href = 'dashboard.html';
+        }
+    }
+});
+
